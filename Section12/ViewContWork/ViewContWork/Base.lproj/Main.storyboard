@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ViewContWork" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FAz-hP-tBf">
+                                <rect key="frame" x="175.66666666666666" y="152" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59w-0w-eAg">
+                                <rect key="frame" x="152" y="290" width="89.333333333333314" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Click Me"/>
+                                <connections>
+                                    <action selector="button1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Eut-ep-SKs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hi1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nRm-m7-zId">
+                                <rect key="frame" x="186" y="480" width="21" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hi2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kkJ-15-0Fo">
+                                <rect key="frame" x="185" y="653" width="23.333333333333343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="nRm-m7-zId" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8bl-rV-MWS"/>
+                            <constraint firstItem="kkJ-15-0Fo" firstAttribute="top" secondItem="nRm-m7-zId" secondAttribute="bottom" constant="152" id="CMV-FJ-il3"/>
+                            <constraint firstItem="59w-0w-eAg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="CfQ-yu-SGC"/>
+                            <constraint firstItem="nRm-m7-zId" firstAttribute="top" secondItem="59w-0w-eAg" secondAttribute="bottom" constant="155" id="Rxt-4Z-cW1"/>
+                            <constraint firstItem="FAz-hP-tBf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bao-Wd-brL"/>
+                            <constraint firstItem="FAz-hP-tBf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="93" id="dhV-eU-tVR"/>
+                            <constraint firstItem="kkJ-15-0Fo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hI3-aF-geo"/>
+                            <constraint firstItem="59w-0w-eAg" firstAttribute="top" secondItem="FAz-hP-tBf" secondAttribute="bottom" constant="117" id="tde-Ec-N1t"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label1" destination="FAz-hP-tBf" id="YPi-c8-jZy"/>
+                        <outletCollection property="labels" destination="nRm-m7-zId" collectionClass="NSMutableArray" id="k4h-nl-jhH"/>
+                        <outletCollection property="labels" destination="kkJ-15-0Fo" collectionClass="NSMutableArray" id="3Gc-Hy-Eep"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="109" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
