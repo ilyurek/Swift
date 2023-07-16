@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Slider___Stepper" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="30" minValue="0.0" maxValue="80" minimumValueImage="arrowshape.left" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="3nL-vZ-mPm">
+                                <rect key="frame" x="18" y="219" width="357" height="31"/>
+                                <imageReference key="maximumValueImage" image="arrowshape.right" catalog="system" variableValue="0.60000000000000009"/>
+                                <connections>
+                                    <action selector="slider:" destination="BYZ-38-t0r" eventType="valueChanged" id="Hmp-RK-SIV"/>
+                                </connections>
+                            </slider>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="cby-Ca-gMn">
+                                <rect key="frame" x="149.66666666666666" y="633" width="94" height="32"/>
+                                <connections>
+                                    <action selector="stepper:" destination="BYZ-38-t0r" eventType="valueChanged" id="xeq-iI-MSa"/>
+                                </connections>
+                            </stepper>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KHo-KD-DcN">
+                                <rect key="frame" x="161" y="455" width="71" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTa-nn-b3J">
+                                <rect key="frame" x="161" y="130" width="71" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auQ-at-Hgb">
+                                <rect key="frame" x="141.66666666666666" y="726" width="110" height="50"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ywW-bl-Nj6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qTa-nn-b3J" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="71" id="04E-s0-4IG"/>
+                            <constraint firstItem="auQ-at-Hgb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BXN-Tl-OAY"/>
+                            <constraint firstItem="3nL-vZ-mPm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Hs8-Xs-eZr"/>
+                            <constraint firstItem="auQ-at-Hgb" firstAttribute="top" secondItem="cby-Ca-gMn" secondAttribute="bottom" constant="61" id="Y58-6C-Bqt"/>
+                            <constraint firstItem="KHo-KD-DcN" firstAttribute="top" secondItem="3nL-vZ-mPm" secondAttribute="bottom" constant="206" id="hpQ-Sq-bFB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3nL-vZ-mPm" secondAttribute="trailing" constant="20" id="k4W-iv-OaS"/>
+                            <constraint firstItem="cby-Ca-gMn" firstAttribute="top" secondItem="KHo-KD-DcN" secondAttribute="bottom" constant="142" id="ms3-XM-DvF"/>
+                            <constraint firstItem="qTa-nn-b3J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nsm-7X-C2d"/>
+                            <constraint firstItem="cby-Ca-gMn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pH9-se-r74"/>
+                            <constraint firstItem="KHo-KD-DcN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qE8-UR-jXx"/>
+                            <constraint firstItem="3nL-vZ-mPm" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="160" id="zCL-s6-Owa"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="KHo-KD-DcN" id="2pz-mO-i3W"/>
+                        <outlet property="label2" destination="qTa-nn-b3J" id="2Me-DS-jyk"/>
+                        <outlet property="slider1" destination="3nL-vZ-mPm" id="htT-DF-PYa"/>
+                        <outlet property="stepper1" destination="cby-Ca-gMn" id="rOY-P3-AXq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="109" y="4"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrowshape.left" catalog="system" width="128" height="104"/>
+        <image name="arrowshape.right" catalog="system" width="128" height="104"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
